@@ -244,7 +244,9 @@ std::vector<std::string> YamlParser::getTabedString(std::vector<std::string> lin
 /*
 Print
 */
-
+void YamlParser::writeToFile(DataType& dataType) {
+    
+}
 
 
 

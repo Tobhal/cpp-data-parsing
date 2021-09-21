@@ -43,7 +43,7 @@ class DataParser {
 
         // Printing to consol
         template <typename T>
-        std::optional<T> get_v_opt(const std::any &a);
+        static std::optional<T> get_v_opt(const std::any &a);
 
         void print();
         std::string buildPrint(const std::any& object, int tab);

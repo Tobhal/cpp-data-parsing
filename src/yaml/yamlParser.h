@@ -48,7 +48,7 @@ class YamlParser : public DataParser {
         static bool containsChar(const std::string& line, char containChar);
 
         // Printing
-        
+        static void writeToFile(DataType& dataType);
 
         
 };
