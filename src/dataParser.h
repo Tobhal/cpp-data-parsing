@@ -39,21 +39,17 @@ class DataParser {
         static inline const char * intToString(int i);      // TODO(Tobias): Compine with double to string, using template?
         static inline const char * doubleToString(double d);
 
-        // Write to file
-
         // Printing to consol
         template <typename T>
         static std::optional<T> get_v_opt(const std::any &a);
 
         void print();
+
+    private:
         std::string buildPrint(const std::any& object, int tab);
         std::string buildObjectPrint(std::map<std::string, std::any> object, int tab);
         std::string buildVectorPrint(std::vector<std::any> vector, int tab);
         std::string buildDataTypePrint(DataType DataType, int tab);
-
-
-        
-
 };
 
 #endif

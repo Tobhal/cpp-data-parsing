@@ -3,11 +3,10 @@
 #include "yaml/yamlParser.h"
 
 int main() {
-    std::cout << "hello" << std::endl;
-
     YamlParser parser("src/yaml/test.yaml");
+    parser.print();
 
-    std::cout << "world" << std::endl;
-
+    YamlParser::writeToFile(parser.result, "testFile.yaml");
+    
     return 0;
 }

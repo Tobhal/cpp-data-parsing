@@ -17,6 +17,8 @@ class YamlParser : public DataParser {
         explicit YamlParser(const std::string& fileName);
         ~YamlParser();
 
+        static void writeToFile(DataType dataType, std::string fileName);
+
     private:
         const char mapChar = ':';       // With a space afther (": ")
         const char listSplitChar = ','; // With a space afther (", ")
@@ -46,11 +48,12 @@ class YamlParser : public DataParser {
 
         static char getFirstChar(const std::string& line);
         static bool containsChar(const std::string& line, char containChar);
-
-        // Printing
-        static void writeToFile(DataType& dataType);
-
         
+        // write to file
+        static std::string buildPrint(const std::any& object, int tab);
+        static std::string buildObjectPrint(std::map<std::string, std::any> object, int tab);
+        static std::string buildVectorPrint(std::vector<std::any> vector, int tab);
+        static std::string buildDataTypePrint(DataType DataType, int tab);
 };
 
 #endif
