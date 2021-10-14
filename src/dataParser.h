@@ -35,9 +35,9 @@ class DataParser {
         static double parseDouble(std::string value);
         static std::string parseString(std::string value);
 
-        static inline const char * boolToString(bool b);
-        static inline const char * intToString(int i);      // TODO(Tobias): Compine with double to string, using template?
-        static inline const char * doubleToString(double d);
+        static const char * boolToString(bool b);
+        static const char * intToString(int i);      // TODO(Tobias): Compine with double to string, using template?
+        static const char * doubleToString(double d);
 
         // Printing to consol
         template <typename T>

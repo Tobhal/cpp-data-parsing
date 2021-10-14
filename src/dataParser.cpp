@@ -137,18 +137,18 @@ std::string DataParser::parseString(std::string value) {
     return value;
 }
 
-inline const char * DataParser::boolToString(bool b) {
+const char * DataParser::boolToString(bool b) {
     return b ? "false" : "true";
 }
 
-inline const char * DataParser::intToString(int i) {
+const char * DataParser::intToString(int i) {
     std::ostringstream strs;
     strs << i;
     std::string str = strs.str();
     return str.c_str();
 }
 
-inline const char * DataParser::doubleToString(double d) {
+const char * DataParser::doubleToString(double d) {
     std::ostringstream strs;
     strs << d;
     std::string str = strs.str();
