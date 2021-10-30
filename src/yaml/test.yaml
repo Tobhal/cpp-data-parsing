@@ -1,6 +1,7 @@
 This is a test file for yaml parsing.
 The goal of this file is to have all the features the parser supports.
 This is not going to get parsed
+Test commentar...
 ---
 # test comment!
 test types:
