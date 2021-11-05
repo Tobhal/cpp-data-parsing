@@ -7,6 +7,6 @@ int main() {
     parser.print();
 
     YamlParser::writeToFile(parser.result, "testFile.yaml");
-    
+
     return 0;
 }
