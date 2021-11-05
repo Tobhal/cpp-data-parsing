@@ -1,0 +1,1 @@
+g++ -std=c++17 -g $(find src -type f -iregex ".*\.cpp") -o Parser
